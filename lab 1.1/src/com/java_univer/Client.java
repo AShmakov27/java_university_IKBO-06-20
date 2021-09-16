@@ -8,6 +8,6 @@ final public class Client extends AbstractPerson{
     }
     @Override
     public String think() {
-        return Client.class.getName();
+        return "I'm a client";
     }
 }

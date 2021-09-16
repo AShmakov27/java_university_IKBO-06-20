@@ -1,5 +1,4 @@
 package com.java_univer;
-//C-style
 public class Person {
     int age;
     float height;
@@ -17,7 +16,7 @@ public class Person {
         }
     };
     public boolean setHeight(float height) {
-        if ((age < MAX_HEIGHT)) {
+        if ((height < MAX_HEIGHT)) {
             this.height = height;
             return true;
         }
@@ -42,13 +41,5 @@ public class Person {
     };
     public float getHeight() {
         return height;
-    };
-    public boolean checkValid(){
-        if ((age < MAX_AGE) & (height < MAX_HEIGHT)) {
-            return true;
-        }
-        else {
-            return false;
-        }
     };
 }
