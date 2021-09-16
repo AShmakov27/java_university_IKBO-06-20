@@ -6,8 +6,8 @@ import com.java_univer.Client;
 public class HumanInterfaceTest {
     void test()
     {
-        Employee employee = new Employee("employee");
-        Client client = new Client("client");
+        Employee employee = new Employee("employee", "department", "manager");
+        Client client = new Client("client", "cleaning", 233.5F);
         System.out.println(employee.getName());
         System.out.println(client.getName());
         System.out.println(employee.think());
