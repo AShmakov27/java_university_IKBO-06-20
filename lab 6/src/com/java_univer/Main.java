@@ -21,10 +21,10 @@ public class Main {
 
         for (int i = 0; i < 106; i++) {
             count++;
-            if (((arr1.get(0) > arr2.get(0)) && (arr1.get(0) != 0) && (arr2.get(0) != 9)) || ((arr1.get(0) == 0) && (arr2.get(0) == 9))) {
+            if (((arr1.get(0) > arr2.get(0)) && (arr1.get(0) != 0) && (arr2.get(0) != 9) && (arr1.get(0) != 9) && (arr2.get(0) != 0)) || ((arr1.get(0) == 0) && (arr2.get(0) == 9))) {
                 arr1.add(arr1.get(0));
                 arr1.add(arr2.get(0));
-            } else if (((arr1.get(0) > arr2.get(0)) && (arr1.get(0) != 0) && (arr2.get(0) != 9)) || ((arr1.get(0) == 0) && (arr2.get(0) == 9))) {
+            } else if (((arr1.get(0) < arr2.get(0)) && (arr2.get(0) != 0) && (arr1.get(0) != 9) && (arr2.get(0) != 9) && (arr1.get(0) != 0)) || ((arr2.get(0) == 0) && (arr1.get(0) == 9))) {
                 arr2.add(arr1.get(0));
                 arr2.add(arr2.get(0));
             }
@@ -34,8 +34,7 @@ public class Main {
                 System.out.println("Second " + count);
                 res = true;
                 break;
-            }
-            if (arr2.size() == 0) {
+            }else if (arr2.size() == 0) {
                 System.out.println("First " + count);
                 res = true;
                 break;
