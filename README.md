@@ -21,3 +21,6 @@ Cобственный класс MyString
 
 ## Lab 6.2
 Упрощенная реализация контейнера MyArrayList
+
+## Lab 7
+Классы MovablePoint и MovableCircle, реализующие интерфейс Movable, реализующий паттерн "Прототип".
